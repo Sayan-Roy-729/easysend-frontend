@@ -9,7 +9,7 @@ body {
   font-family: system-ui;
   background: var(--main-bg-color);
   height: 98vh;
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .logo {
