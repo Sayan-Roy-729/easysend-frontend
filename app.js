@@ -147,7 +147,7 @@ emailForm.addEventListener("submit", (e) => {
     emailFrom: emailForm.elements["from-email"].value,
   };
   console.log(formData);
-  fetch(`${emailURL}`, {
+  fetch(emailURL, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -160,9 +160,6 @@ emailForm.addEventListener("submit", (e) => {
         showToast("Email Sent");
         sharingContainer.style.display = "none"; // hide the box
       }
-    })
-    .catch(err => {
-      showToast("Unable to send email!");
     });
 });
 
